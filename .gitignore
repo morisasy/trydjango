@@ -2,15 +2,24 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+bin/
+include/
 # C extensions
 *.so
-venv
-products/__pycache__/
-pythop/__pycache__/
-
 
 # Distribution / packaging
+include/
+bin/
+src/migrations/
+pages/migrations/
+pages/__pycache__/
+
+src/__pycache__/
+
+products/__pycache__/
+products/migrations/
+
+
 .Python
 build/
 develop-eggs/
@@ -19,6 +28,8 @@ downloads/
 eggs/
 .eggs/
 lib/
+bin/
+include/
 lib64/
 parts/
 sdist/
@@ -113,3 +124,17 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+.env
+db.sqlite3
+bin/**
+tmp/**
+tmp/**/*
+include/**
