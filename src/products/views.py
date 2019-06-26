@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
+
 
 from .models import Product 
 from .forms import ProductForm, RawProductForm
@@ -40,6 +41,16 @@ def product_detail_view(request):
 	}
 
 	return render(request, "products/product_detail.html", context)
+	
+
+def product_detail_view(request):
+	queryset = Product.objects.all() # list of objects
+
+	context = {
+		'object_list': queryset
+	}
+
+	return render(request, "products/product_list.html", context)
 	
 
 
