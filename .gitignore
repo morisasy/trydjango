@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+/**/**/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -8,8 +9,11 @@ __pycache__/
 
 .DS_Store
 bin/
+/**/**/bin/
 include/
 pip-selfcheck.json
+[Bb]in/
+
 
 # Distribution / packaging
 .Python
